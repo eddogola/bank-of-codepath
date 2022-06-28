@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Navbar filterInputValue={ filterInputValue } setFilterInputValue={ setFilterInputValue } />
         <main>
           <Routes>
             <Route path="/" element={ <Home /> } />
